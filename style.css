@@ -1,0 +1,505 @@
+/*
+ *
+ * Theme name: KS BASTION
+ * Author: Jerzy Kaczmarczyk
+ *
+ */
+@font-face {
+    font-family: play;
+    src: url('fonts/Play-Regular.ttf');
+}
+
+#wrap {
+    width: 100%;
+    font-family: play;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+.img {
+    margin-left: 0px;
+    position: relative;
+    opacity: 0;
+    padding-top: 53px;
+}
+
+#head {
+    background: rgba(0,204,204, 1);
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    padding: 0px;
+}
+.bar {
+    position: relative;
+    height: 1px;
+    /*background:rgba(0,204,204, 1);*/
+    background: #222
+}
+.tiles {
+    padding: 0px;
+}
+
+.img.active {
+    opacity: 1;
+    transition: opacity ease-in 2s;
+}
+
+@media (max-width: 500px) {
+    #head {
+        font-size: 30px;
+    }
+}
+@media (max-width: 370px) {
+    #head {
+        font-size: 20px;
+    }
+}
+@media (max-width: 250px) {
+    #head {
+        font-size: 10px;
+    }
+}
+.description {
+    min-height: 200px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.navbar {
+    background: -webkit-linear-gradient(#A80000,#C00000 ,#E80000 ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#A80000,#C00000 ,#E80000 ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#A80000,#C00000 ,#E80000 ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#A80000,#C00000 ,#E80000 ); /* Standard syntax */
+    border-radius: 0px;
+    color: #c7c7c7;
+    margin: 0px;
+}
+
+.item {
+    text-align: center;
+}
+
+.photo-link {
+    color: #222;
+    text-decoration: none;
+    text-align: center;
+}
+
+.photo-link:hover {
+    text-decoration: none;
+    color: #222;
+}
+.photo-link:active {
+    text-decoration: none;
+    color: #222;
+}
+.photo-link:visited {
+    text-decoration: none;
+    color: #222;
+}
+.article-header {
+    text-align: center;
+    font-weight: bolder !important;
+    color: #00006E;
+    margin-top: 50px;
+}
+
+.slider-title {
+    color: white;
+}
+#menu-container {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    position: absolute;
+    z-index: 20;
+    color: white !important;
+}
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    font-size: 18px;
+}
+.under-menu {
+    margin-top: 56px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    padding: 0px;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 65px;
+}
+.footer {
+    position: absolute !important;
+    bottom: 0;
+    top: 100%;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 65px;
+    background: rgba(255,255,255 0);
+    margin-top: 100px;
+}
+.grayscale {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+    -webkit-backface-visibility: hidden; /* Fix for transition flickering */
+}
+
+.grayscale:hover {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(0%);
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: rgba(221, 221, 221, 0.6);
+}
+/*
+ .navbar-collapse.collapse.in li:hover {
+ color: #555;
+ background-color: #e7e7e7;
+ }
+*/
+
+.custom-menu .navbar-collapse.collapse li a {
+    display: inline-block !important;
+    vertical-align: middle !important;
+    -webkit-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0) !important;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    position: relative !important;
+    -webkit-transition-property: color !important;
+    transition-property: color !important;
+    -webkit-transition-duration: 0.5s !important;
+    transition-duration: 0.5s !important;
+    display: inline-block !important;
+    */
+    /* vertical-align:  middle !important; */
+    margin: .4em !important;
+    padding: 1em !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+}
+.custom-menu .navbar-collapse.collapse li a:before {
+    content: "" !important;
+    position: absolute !important;
+    z-index: -1 !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: #e7e7e7 !important;
+    -webkit-transform: scaleY(0) !important;
+    transform: scaleY(0) !important;
+    -webkit-transform-origin: 50% 100% !important;
+    transform-origin: 50% 100% !important;
+    -webkit-transition-property: transform !important;
+    transition-property: transform !important;
+    -webkit-transition-duration: 0.5s !important;
+    transition-duration: 0.5s !important;
+    -webkit-transition-timing-function: ease-out !important;
+    transition-timing-function: ease-out !important;
+    opacity: 0.9;
+}
+
+.custom-menu .navbar-collapse.collapse li.active a {
+    background-color: #F1F1F1;
+}
+.custom-menu .navbar-collapse.collapse li a:hover,
+background-color: transparent;
+color: #000 !important;
+}
+.custom-menu .navbar-collapse.collapse li a {
+    color: #fff !important;
+}
+.custom-menu .navbar-collapse.collapse li a:hover:before {
+    -webkit-transform: scaleY(1) !important;
+    transform: scaleY(1) !important;
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66) !important;
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66) !important;
+}
+
+/*.fb-like {
+ position: fixed;
+ z-index: 530;
+ width: 500px;
+ right: -282px;
+ bottom: -155px;
+ opacity: 0.5;
+ transition: 1s;
+ border: solid 4px;
+ border-radius: 10px;
+ }
+
+ .fb-like:hover {
+ position: fixed;
+ z-index: 530;
+ width: 500px;
+ right: 0;
+ bottom: 0;
+ opacity: 1;
+ }*/
+
+#facebook_slider_widget {
+    opacity: 0.3;
+    position: fixed;
+    right: 0;
+    width: 550px;
+    margin-right: -500px;
+    -webkit-transition: 1s !important;
+    -moz-transition: 1s !important;
+    -o-transition: 1s !important;
+    transition: 1s !important;
+    top: 85% !important;
+    height: 300px;
+    margin-top: -150px;
+    z-index: 99999;
+}
+
+#facebook_slider_widget:hover {
+    margin-right: 0px;
+    opacity: 1;
+}
+
+.container {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.news {
+    text-align: center;
+    position: relative;
+}
+
+.weblizar_powered {
+    display: none;
+}
+.partner-img-container {
+    margin: 10px 0;
+    height: 100px;
+}
+
+@media (max-width: 991px) {
+    .custom-menu .navbar-collapse.collapse li a {
+        width: 100%;
+    }
+    .partner-img-container {
+        margin: 10px 0;
+        height: 100px;
+    }
+    .partner-img-container img {
+        max-width: 50%;
+    }
+}
+@media (max-width: 767px) {
+    .partner-img-container {
+        width: 50%;
+    }
+}
+@media (max-width: 428px) {
+    .partner-img-container {
+        width: 100%;
+    }
+    .partner-img-container img {
+        margin: 0 auto;
+    }
+}
+
+
+.oklubie{
+    border-style: solid;
+    border-width: 1px;
+    margin-top:20px;
+    border-radius: 5px;
+    border-color:  #c7c7c7;
+    background-image:url('img/light.png')/*This pattern is downloaded from www.subtlepatterns.com 
+ If you need more, that's where to get'em.*/;
+    -webkit-box-shadow: 2px 0px 26px -2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 2px 0px 26px -2px rgba(0,0,0,0.3);
+    box-shadow: 2px 0px 26px -2px rgba(0,0,0,0.3);
+
+    text-align:justify;
+}
+
+
+
+#strzelectwo-head {  
+    margin-top:56px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 70px; 
+    font-style: italic;
+    position:absolute;
+    z-index: 2;
+    color:whitesmoke;
+}
+
+.nopadding{
+    padding:0;
+}
+#strzelectwo-info {
+    background-color: whitesmoke;
+    font-size: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+
+
+}
+
+.strzelectwo_konkurencje {
+    font-size: 40px;
+    background-color: whitesmoke;
+    padding-top:50px;
+    padding-bottom: 50px;
+    padding-left:30px;
+    text-align:center;
+}
+
+#strzelectwo_kpn{
+    color:whitesmoke;
+    padding-top: 30px;
+    padding-bottom:30px;
+    font-size: 18px;
+    background-image: url('img/dark.png') /*This pattern is downloaded from www.subtlepatterns.com*/;
+    text-align: justify;
+}
+#strzelectwo_kdw{
+    color:whitesmoke;
+    padding-top: 30px;
+    padding-bottom:30px;
+    font-size: 18px;
+    background-color: #330000;
+    text-align: justify;
+}
+#strzelectwo_ksp{
+    color:whitesmoke;
+    padding-top: 30px;
+    padding-bottom:30px;
+    font-size: 18px;
+    background-color: #330000;
+    text-align: justify;
+}
+#strzelectwo_ppn{
+    color:whitesmoke;
+    padding-top: 30px;
+    padding-bottom:30px;
+    font-size: 18px;
+    background-color: #000033;
+    text-align: justify;
+}
+
+#strzelectwo_pdw{
+    color:whitesmoke;
+    padding-top: 30px;
+    padding-bottom:30px;
+    font-size: 18px;
+    background-color: #0d001a;
+    text-align: justify;
+}
+#strzelectwo_psz{
+    color:whitesmoke;
+    padding-top: 30px;
+    padding-bottom:30px;
+    font-size: 18px;
+    background-color: #12123b;
+    text-align: justify;
+}
+
+#strzelectwo_pst{
+    color:whitesmoke;
+    padding-top: 30px;
+    padding-bottom:30px;
+    font-size: 18px;
+    background-color:#00111a;
+    text-align: justify;
+}
+
+.strzelectwo_desc_img{
+    border-radius: 15px;
+}
+
+@media (max-width:600px){
+
+    #strzelectwo-head{
+        font-size:25px;
+    }
+    #strzelectwo-info{
+        font-size: 20px;
+    }
+}
+
+#oferta-head {
+    background-color: whitesmoke;
+    font-size: 60px;
+    padding-top:50px;
+    padding-bottom:50px;
+    text-align:center;
+    color:#330000;
+}
+#oferta-pistolet{
+    font-size: 25px;
+    padding-top:50px;
+    padding-bottom: 50px;
+    background-color: whitesmoke;
+    text-align: justify;
+    padding-left:30px;
+    padding-right:30px;
+}
+#oferta-karabin{
+    font-size: 25px;
+    padding-top:50px;
+    padding-bottom: 50px;
+    background-color: whitesmoke;
+    text-align: justify;
+    padding-left:30px;
+    padding-right:30px;
+}
+#oferta-desc{
+    font-size: 25px;
+    padding-bottom: 50px;
+    background-color: whitesmoke;
+    text-align: justify;
+    font-style: italic;
+    padding-left:30px;
+    padding-right:30px;
+}
+#akcja-head{
+    font-size: 50px;
+    padding-top:50px;
+    padding-bottom:50px;
+    font-style: italic;
+    text-align:center;
+}
+#nabor-desc{
+    background-color:whitesmoke;
+    font-size:25px;
+    text-align: justify;
+    font-style:italic;
+    padding-top:50px;
+    padding-left:30px;
+    padding-right:30px;
+}
